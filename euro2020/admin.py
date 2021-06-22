@@ -4,11 +4,14 @@ from django.contrib import admin
 from .models import Bet, GroupStagePicks
 
 admin.register(Bet, GroupStagePicks)(admin.ModelAdmin)
+global start
+start = False
 
 if GroupStagePicks.objects.all():
     #nothing to do since entries have already been created
     pass
 else:
+    start = True
     #first time hitting run server, create the picks
     #c = GroupStagePicks()
     #c.group = "E"
