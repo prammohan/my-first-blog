@@ -1,0 +1,1054 @@
+    1  ls
+    2  pwd
+    3  cd apps
+    4  ls
+    5  mkdir hello-world
+    6  cd hello-world
+    7  vi hello.rb
+    8  ruby hello.rb
+    9  pwd
+   10  cd ..
+   11  rails
+   12  which rvm
+   13  gem env
+   14  gem env home
+   15  gem search '^rails$' --all
+   16  ruby --version
+   17  rbenv install 2.6.0
+   18  rbenv global 2.6.0
+   19  cat ~/.zshrc
+   20  psql -h localhost
+   21  gem install rails --no-ri --no-rdoc
+   22  ruby --version
+   23  rbenv global 2.6.0
+   24  ruby --version
+   25  which ruby
+   26  vi ~/.zshrc
+   27  vi $ZSH/oh-my-zsh.sh
+   28  echo $PATH
+   29  env | grep PATH
+   30  source ~/.zshrc
+   31  echo $PATh
+   32  echo $PATH
+   33  cat ~/.zshrc | grep rbenv
+   34  pwd
+   35  vi ~/.zshrc
+   36  source ~/.zshrc
+   37  which ruby
+   38  ruby -v
+   39  gem install rails --no-ri --no-rdoc
+   40  gem install rails -no-ri -no-rdoc
+   41  rails --version
+   42  ls
+   43  cd ..
+   44  pwd
+   45  ls
+   46  find . -name "*rails*"
+   47  gem install rails 
+   48  rails --version
+   49  rails
+   50  grep rbenv ~/.cshrc
+   51  grep rbenv ~/.zshrc
+   52  pwd
+   53  ls
+   54  cd apps
+   55  rails new blog
+   56  exit
+   57  which zsh
+   58  echo $SHELL
+   59  zsh --version
+   60  pwd
+   61  ls
+   62  cd Applications/
+   63  ls
+   64  cd ..
+   65  pwd
+   66  $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"\n
+   67  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"\n
+   68  rails --version
+   69  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"\n
+   70  source ~/.zshrc
+   71  ls
+   72  rails --version
+   73  sqlite3 --version
+   74  ruby --version
+   75  gem install bundler
+   76  rails --version
+   77  pwd
+   78  ls
+   79  cd appa
+   80  cd apps
+   81  ls
+   82  vi o-rdoc/rails
+   83  vi o-rdoc/nokogiri
+   84  ls
+   85  rails
+   86  ruby --version
+   87  which rbenv
+   88  grep rbenv ~/.*
+   89  rails
+   90  grep "2.3.1" ~/.*
+   91  pwd
+   92  cd ..
+   93  grep -ir "2.3.1" *.*
+   94  pwd
+   95  ls
+   96  grep -ir "2.3.1" .*
+   97  rbenv uninstall 2.3.1
+   98  cd .rbenv
+   99  la
+  100  vi version
+  101  cd versions
+  102  ls
+  103  cd 2.3.1/bin
+  104  ls
+  105  cd ..
+  106  p[wd
+  107  pwd
+  108  cd ..
+  109  find . -name Gemfile
+  110  vi ./.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rake-12.3.2/Gemfile
+  111  cd ..
+  112  pwd
+  113  cd ramp
+  114  ls
+  115  rbenv uninstall 2.3.1
+  116  rails
+  117  sudo gem install rails
+  118  rails --version
+  119  gem install rails
+  120  sudo gem install rails
+  121  sudo gem uninstall rails
+  122  rails
+  123  gem install rails
+  124  rails --version
+  125  gem uninstall rails
+  126  pwd
+  127  ls
+  128  gem uninstall rails
+  129  rbenv uninstall 2.6.0
+  130  ls
+  131  cd apps/o-rdoc/
+  132  lsa
+  133  cd rails
+  134  ls
+  135  pwd
+  136  cd ..
+  137  ls
+  138  cd ..
+  139  ls
+  140  pwd
+  141  ls .rbenv/versions
+  142  cd .rbenv/versions
+  143  ls
+  144  cd ..
+  145  lks
+  146  ;ls
+  147  ls
+  148  cd shims
+  149  ls
+  150  cd ..
+  151  ;s
+  152  ls
+  153  cd ..
+  154  pwd
+  155  brew uninstall rbenv
+  156  which rbenv
+  157  brew update
+  158  ls
+  159  brew install rbenv
+  160  ls
+  161  cd .rbenv/versions
+  162  ls
+  163  which ruby
+  164  ruby --version
+  165  rails
+  166  rbenv install 2.6.0
+  167  ruby --version
+  168  rbenv global 2.6.0
+  169  which ruby
+  170  source ~/.zshrc
+  171  gem install bundler
+  172  gem install rails
+  173  rails --version
+  174  ruby -v
+  175  gem uninstall rails
+  176  gem install rails
+  177  rbenv rehash
+  178  rails -v
+  179  pwd
+  180  cd ../../
+  181  ls
+  182  cd apps
+  183  ls
+  184  rails new blog
+  185  ls
+  186  cd blog
+  187  ls
+  188  bin/rails server
+  189  sqlite3 --version
+  190  rails --version
+  191  ls
+  192  pwd
+  193  rails new -h
+  194  cat .ruby-version
+  195  ls .*
+  196  cat .gitignore
+  197  bin/rails generate -h
+  198  bin/rails generate controller Welcome index
+  199  pwd
+  200  ls
+  201  vi app/views/welcome/index.html.erb
+  202  vi config/routes.rb
+  203  bin/rails server
+  204  vi app/views/welcome/index.html.erb
+  205  bin/rails server
+  206  vi config/routes.rb
+  207  bin/rails routes
+  208  ls
+  209  bin/rails server
+  210  bin/rails generate controller Articles
+  211  ls
+  212  vi app/controllers/articles_controller.rb
+  213  bin/rails server &
+  214  vi app/controllers/articles_controller.rb
+  215  ls
+  216  ls app/views/articles/
+  217  vi app/views/articles/new.html.erb
+  218  jobs
+  219  bin/rails routes
+  220  pwd
+  221  vi app/views/articles/new.html.erb
+  222  vi app/controllers/articles_controller.rb
+  223  ls
+  224  ruby
+  225  pw
+  226  pwd
+  227  brew install icarus-verilog
+  228  homebrew
+  229  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  230  attrib10
+  231  homebrew
+  232  brew help
+  233  pwd
+  234  ls
+  235  brew install icarus-verilog
+  236  ls
+  237  pwd
+  238  iverilog
+  239  sudo port -v install gtkwave
+  240  cd /usr/local/Cellar/icarus-verilog
+  241  ls
+  242  cd 10.3
+  243  ls
+  244  vi README.txt
+  245  pwd
+  246  vi IN
+  247  vi INSTALL_RECEIPT.json
+  248  pwd
+  249  cd -
+  250  pwd
+  251  cd ..
+  252  cd //
+  253  pwd
+  254  cd $HOME
+  255  pwd
+  256  ls
+  257  mkdir vmyverilog
+  258  mv vmyverilog myverilog
+  259  cd myverilog
+  260  ls
+  261  pwd
+  262  vi try.v
+  263  iverilog try.v
+  264  history
+  265  brew install https://github.com/macvim-dev/macvim
+  266  brew install macvim
+  267  mvim try.v
+  268  /Users/ramp/Downloads/gtkwave-3.3.104/install-sh ; exit;
+  269  /Users/ramp/Downloads/gtkwave-3.3.104/install-sh
+  270  ./configure
+  271  pwd
+  272  cd /Users/ramp/Downloads
+  273  cd gtkwave-3.3.104
+  274  ls
+  275  ./configure
+  276  brew install tcl-tk
+  277  brew install tcl-tk 8.5
+  278  which tcl
+  279  tclsh
+  280  /Users/ramp/Downloads/gtkwave-3.3.104/configure ; exit;
+  281  pwd
+  282  cd -
+  283  cd /Users/ramp/myverilog
+  284  iverilog asyncfifo.v
+  285  iverilog asyncfifo_tb.v
+  286  vvp a.out
+  287  mvim asyncfifo.v
+  288  iverilog asyncfifo.v
+  289  iverilog asyncfifo_tb.v
+  290  vvp a.out
+  291  iverilog asyncfifo.v
+  292  iverilog asyncfifo_tb.v
+  293  vvp a.out
+  294  iverilog asyncfifo.v
+  295  iverilog asyncfifo_tb.v
+  296  vvp a.out
+  297  iverilog asyncfifo.v
+  298  iverilog asyncfifo_tb.v
+  299  vvp a.out
+  300  pwd
+  301  cd ~/Documents/projects
+  302  ls
+  303  cd helloworld
+  304  ls
+  305  g++ helloworld/main.cpp
+  306  cd helloworld
+  307  ls
+  308  ls ../
+  309  cd ..
+  310  cat a.out
+  311  pwd
+  312  ls
+  313  cd helloworld
+  314  g++ main.cpp
+  315  ls
+  316  rm a.out
+  317  ls
+  318  ./main
+  319  ls -ltr
+  320  cd ..
+  321  ls
+  322  ls -ltr
+  323  cd helloworld.xcodeproj
+  324  ls
+  325  ls -ltr
+  326  pwd
+  327  cd ..
+  328  ;s
+  329  ls
+  330  pwd
+  331  ls
+  332  cd helloworld
+  333  ls
+  334  ~/Library/Developer/Xcode/DerivedData/helloworld-ahbwlgpiraxhdpbcdaiqvalmeqyy/Build/Products/Debug/helloworld
+  335  ~/Library/Developer/Xcode/DerivedData/helloworld-ahbwlgpiraxhdpbcdaiqvalmeqyy/Build/Products/Debug/helloworld ram
+  336  ~/Library/Developer/Xcode/DerivedData/helloworld-ahbwlgpiraxhdpbcdaiqvalmeqyy/Build/Products/Debug/helloworld 2 ram
+  337  brew update
+  338  brew install exercism
+  339  exercism version
+  340  exercism configure --token=dd19cd90-462b-4074-9609-a763878266b7
+  341  exercism download --exercise=hello-world --track=cpp
+  342  pwd
+  343  cd Exercism/cpp
+  344  ls
+  345  cd hello-world
+  346  ls
+  347  brew install gcc
+  348  ls
+  349  cat hello_world.h
+  350  cat hello_world.cpp
+  351  gvim hello_world.cpp
+  352  ls
+  353  cat README.md
+  354  cat README.md | more
+  355  cmake
+  356  Cmake
+  357  CMake
+  358  pwd
+  359  ls
+  360  cat CMakeLists.txt
+  361  get_filename_component(exercise ${CMAKE_CURRENT_SOURCE_DIR} NAME)
+  362  which cmake
+  363  pwd
+  364  find ~/ -name "exercism"
+  365  uname -m
+  366  pwd
+  367  mkdir -p ~/bin
+  368  if [ -d ~/bin ]; then echo "folder created"; else echo "folder not created"; fi
+  369  mv ~/Downloads/exercism ~/bin
+  370  mv ~/Downloads/exercism-mac-64bit ~/bin
+  371  gvim ~/.bash_profile
+  372  touch ~/.bash_profile
+  373  exercis
+  374  exercism
+  375  echo 'export PATH=~/bin:$PATH' >> ~/.bash_profile
+  376  cat ~/.bash_profile
+  377  export PATH=~/bin:$PATH
+  378  echo $PATH
+  379  source ~/.bash_profile
+  380  echo $PATH
+  381  cmake
+  382  pwd
+  383  ls
+  384  mkdir build
+  385  ls
+  386  cd build
+  387  cmake -G ../CMakeLists.txt
+  388  make
+  389  make ../CMakeLists.txt
+  390  make
+  391  which make
+  392  ls
+  393  cd ,,
+  394  cd ..
+  395  make
+  396  sudo nano /etc/paths
+  397  gvim /etc/paths
+  398  ls /Applications/CMake.app/Contents/bin
+  399  sudo nano /etc/paths
+  400  which cmake
+  401  source Cmake
+  402  Cmake
+  403  /Applications/CMake.app/Contents/bin/cmake
+  404  source /etc/paths
+  405  Cmake
+  406  cmake
+  407  echo $PATH
+  408  history | grep PATH
+  409  cd
+  410  pwd
+  411  gvim .zshrc
+  412  ls $HOME
+  413  pwd
+  414  ls /Applications/CMake.app/Contents/
+  415  pwd
+  416  cd Exercism/cpp/hello-world
+  417  ls
+  418  cd build
+  419  /Applications/CMake.app/Contents/bin/cmake -G ../CMakeLists.txt
+  420  cd ..
+  421  /Applications/CMake.app/Contents/bin/cmake -G CMakeLists.txt
+  422  /Applications/CMake.app/Contents/bin/cmake -G Xcode CMakeLists.txt
+  423  ls
+  424  ls -ltr
+  425  less CMakeFiles/CMakeError.log
+  426  pwd
+  427  cd build
+  428  cmake -G "Unix Makefiles" ..
+  429  /Applications/CMake.app/Contents/bin/cmake -G "Unix Makefiles" ..
+  430  ls
+  431  pwd
+  432  ls
+  433  pwd
+  434  gvim ../README.md
+  435  gvim ../CMakeLists.txt
+  436  /Applications/CMake.app/Contents/bin/cmake --version
+  437  get_filename_component(exercise ${CMAKE_CURRENT_SOURCE_DIR} NAME)\n
+  438  exit
+  439  pwd
+  440  cd Exercism/cpp/hello-world
+  441  ls
+  442  cat CMakeLists.txt| more
+  443  get_filename_component
+  444  get_filename_component(exercise ${CMAKE_CURRENT_SOURCE_DIR} NAME)
+  445  zsh
+  446  get_filename_component(exercise ${CMAKE_CURRENT_SOURCE_DIR} NAME)
+  447  /Applications/CMake.app/Contents/bin/cmake
+  448  /Applications/CMake.app/Contents/bin/cmake -G "Unix Makefiles" ../
+  449  pwd
+  450  /Applications/CMake.app/Contents/bin/cmake -G "Unix Makefiles" .
+  451  pwd
+  452  cd ..
+  453  rm -rf hello-world
+  454  exercism download --exercise=hello-world --track=cpp
+  455  pwd
+  456  ls
+  457  cd hello-world
+  458  ls
+  459  mkdir build
+  460  cd build
+  461  /Applications/CMake.app/Contents/bin/cmake -G "Unix Makefiles" ..
+  462  ls
+  463  make
+  464  pwd
+  465  gvim ../hello_world.cpp
+  466  gvim ../hello_world.h
+  467  gvim ../hello_world.cpp
+  468  make
+  469  exercism submit ..
+  470  exercism submit ../hello_world.cpp
+  471  pwd
+  472  cd ..
+  473  exercism download --exercise=leap --track=cpp
+  474  pwd
+  475  cd lea
+  476  cd leap
+  477  ls
+  478  mkdir build 
+  479  cd build
+  480  ls
+  481  /Applications/CMake.app/Contents/bin/cmake -G "Unix Makefiles" ..
+  482  make
+  483  gvim ../leap.h
+  484  gvim ../leap.cpp
+  485  gvim ../test/tests-main.cpp
+  486  gvim ../test/catch.hpp
+  487  pwd
+  488  grep is_leap ../*(
+  489  grep is_leap ../*
+  490  ls ../
+  491  gvim ../leap_test.cpp
+  492  gvim ../leap.cpp
+  493  grep main ../*
+  494  grep -ir main ../../hello-world/*
+  495  grep -ir "int main" ../../hello-world/*
+  496  gvim ../../hello-world/test/catch.hpp
+  497  gvim ../../hello-world/hello_world*
+  498  gvim ../../hello-world/hello_world.h
+  499  pwd
+  500  ls
+  501  gvim ../leap.h
+  502  pwd
+  503  make
+  504  gvim ../../hello-world/hello_world.h
+  505  make
+  506  less ../leap_test.cpp
+  507  make
+  508  :se nu
+  509  make
+  510  make -v
+  511  build clean
+  512  make clean
+  513  make
+  514  make clean
+  515  make
+  516  pwd
+  517  ls
+  518  ls -ltr
+  519  ls CMakeFiles
+  520  grep is_leap_year *
+  521  grep -ir is_leap_year *
+  522  grep -ir is_leap_year ../*
+  523  gvim CMakeFiles/leap.dir/leap_test.cpp.o
+  524  build clean
+  525  make clean
+  526  make
+  527  ls
+  528  rm -rf CMakeFiles
+  529  ls
+  530  make
+  531  ls
+  532  pwd
+  533  ls ..
+  534  make
+  535  rm -rf CMakeFiles
+  536  make
+  537  ]
+  538  make
+  539  make -v
+  540  make
+  541  grep "#include" ../*
+  542  make
+  543  make clean
+  544  make
+  545  pwd
+  546  ls
+  547  gvim ../leap.h
+  548  make
+  549  grep RUN_ALL ../*
+  550  make
+  551  exercism submit ../leap.cpp
+  552  pwd
+  553  history
+  554  exercism download --exercise=hamming --track=cpp
+  555  pwd
+  556  cd ../../hamming
+  557  ls
+  558  mkdir buil
+  559  rm -rf buil
+  560  mkdir build
+  561  cd build
+  562  ls
+  563  pwd
+  564  ls
+  565  ls ../
+  566  /Applications/CMake.app/Contents/bin/cmake -G "Unix Makefiles" ..
+  567  ls
+  568  cmake
+  569  make
+  570  gvim ../hamming_test.cpp
+  571  cat ../../leap/leap.cpp
+  572  cat ../../leap/leap.h
+  573  make
+  574  pwd
+  575  ls
+  576  pwd
+  577  cd 
+  578  pwd
+  579  mkdir cppcode
+  580  cd cppcode
+  581  gvim codeiwrote.cpp
+  582  /Users/ramp/opt/anaconda3/bin/jupyter_mac.command ; exit;
+  583  which python
+  584  python --version
+  585  whoami
+  586  pwd
+  587  pip install virtualeng
+  588  pip install virtualenv
+  589  ls
+  590  which pip
+  591  pip --version
+  592  su
+  593  whoami
+  594  which venv
+  595  ls /usr/local/bin
+  596  pip install virtualenvwrapper
+  597  ls
+  598  ls -ltr /usr/local/bin
+  599  ls -ltr /Users/ramp/.*
+  600  source /usr/local/bin/virtualenvwrapper.sh
+  601  find . -name "virtualenvwrapper*"
+  602  ls
+  603  gvim ~/.zshrc
+  604  find . -name ".virtualenvs"
+  605  ls $HOME
+  606  echo $HOME
+  607  pwd
+  608  find opt/anaconda3/ -name "virtualenvs"
+  609  find opt/anaconda3/ -name "*virtualenvs*"
+  610  find opt/anaconda3/ -name ".virtualenvs*"
+  611  find  aopt/anaconda3/ -name ".virtualenvs*"
+  612  find -a opt/anaconda3/ -name ".virtualenvs*"
+  613  find -A opt/anaconda3/ -name ".virtualenvs*"
+  614  find . -name ".*"
+  615  find . -name ".*" | grep virtual
+  616  find -r . -name ".*" | grep virtual
+  617  ls -al .*
+  618  ls -al .* .
+  619  ls
+  620  ls -al .*
+  621  ls -alr .*
+  622  ls -a
+  623  ls
+  624  ls -l
+  625  ls -al
+  626  ls -ral
+  627  ls -al .anaconda
+  628  ls -al .anaconda/navigator
+  629  ls -al opt
+  630  ls -al opt/anaconda3
+  631  ls -al opt/anaconda3/bin
+  632  echo $WORKON_HOME
+  633  gvim opt/anaconda3/bin/virtualenv
+  634  source ~/.zshrc
+  635  gvim opt/anaconda3/bin/virtualenv
+  636  ls /Users/ramp/opt/anaconda3/bin/virtualenv
+  637  ls -al /Users/ramp/opt/anaconda3/bin/virtualenv
+  638  pwd
+  639  ls
+  640  which virtualenv
+  641  virtualenv pycon-venv
+  642  ls
+  643  source pycon-venv/bin/activate
+  644  which mkvirtualenv
+  645  mkvirtualenv pycon
+  646  gvim ~/.zshrc
+  647  echo $WORKON_HOME
+  648  pip install django==1.6.2
+  649  django-admin.py startproject survivalguide
+  650  deactivate
+  651  quit
+  652  exit
+  653  gvim ~/.zshrc
+  654  source ~/.zshrc
+  655  ls
+  656* quit
+  657* exit
+  658  pwd
+  659  whoami
+  660  man pwd
+  661  pwd -L
+  662  python --version
+  663  which python
+  664  conda install anaconda-clean
+  665  anaconda-clean --yes
+  666  rm -rf opt/anaconda3
+  667  rm -rf /Users/ramp/.anaconda_backup
+  668  gvim ~/.bash_profile
+  669  gvim ~/.zshrc
+  670  grep PATH ~/.
+  671  grep PATH ~/.*
+  672  which python
+  673  python --version
+  674  python3 --version
+  675  brew update
+  676  brew upgrade python
+  677  which python
+  678  python --version
+  679  alias python=/usr/local/bin/python3.9
+  680  which python
+  681  brew upgrade python3.8.6
+  682  brew upgrade python 3.8.6
+  683  python3
+  684  python3 -m venv myvenv
+  685  which python
+  686  python -m pip install --upgrade pip
+  687  pwd
+  688  ls
+  689  touch requirements.txt
+  690  gvim requirements.txt
+  691  pip install -r requirements.txt
+  692  django-admin startproject mysite .
+  693  ls -ltr
+  694  gvim mysite/settings.py
+  695  pwd
+  696  cat manage.py
+  697  python manage.py migrate
+  698  cat requirements.txt
+  699  which django
+  700  history | grep req
+  701  find . -name "Django"
+  702  cat manage.py
+  703  echo $DJANGO_SETTINGS_MODULE
+  704  python manage.py migrate
+  705  echo $PYTHONPATH
+  706  python manage.py showmigrations mysite
+  707  echo $PYTHONPATH
+  708  python
+  709  ls
+  710  gvim myvenv/pyvenv.cfg
+  711  grep django myvenv/bin/*
+  712  gvim myvenv/lib/python3.9/site-packages/django/__init__.py
+  713  python manage.py migrate
+  714  pip freeze
+  715  pip env
+  716  pipenv
+  717  deactivate
+  718  rm myvenv -rf
+  719  rm -rf myvenv
+  720  pwd
+  721  python3 -m venv myvenv
+  722  source myenv/bin/activate
+  723  source myvenv/bin/activate
+  724  pip install Django==2.2.4
+  725  python manage.py migrate
+  726  which python
+  727  python -m pip install --upgrade pip
+  728  deactivate
+  729  rm -rf myvenv
+  730  which python
+  731  which python3
+  732  python3.9 -m venv myvenv
+  733  source myenv/bin/activate
+  734  source myvenv/bin/activate
+  735  pip install Django==2.2.4
+  736  python manage.py migrate
+  737  python3.9 manage.py migrate
+  738  which python
+  739  which python3.9
+  740  alias python=/Users/ramp/myvenv/bin/python3.9
+  741  which python
+  742  python manage.py runserver
+  743  pwd
+  744  python manage.py startapp blog
+  745  ls
+  746  ls -ltr
+  747  pwd
+  748  gvim mysite/settings.py
+  749  gvim blog/models.py
+  750  python manage.py makemigrations blog
+  751  python manage.py migrate blog
+  752  gvim blog/admin.py
+  753  python manage.py runserver
+  754  gvim blog/models.py
+  755  python manage.py createsuperuser
+  756  python manage.py runserver
+  757  pwd
+  758  ls
+  759  ls ~/
+  760  gvim .gitignore
+  761  mkdir djangogirls
+  762  cd djangogirls
+  763  ls
+  764  django-admin startproject mysite .
+  765  ls
+  766  gvim mysite/settings.py
+  767  grep "Los" ../*
+  768  grep "Los" ../mysite/*
+  769  pwd
+  770  cd mysite
+  771  gvim settings.py
+  772  grep ALLOWED ../mysite/*
+  773  pwd
+  774  cd ..
+  775  python manage.py migrate
+  776  python manage.py runserver
+  777  python manage.py startapp blog
+  778  ls
+  779  pwd
+  780  ls
+  781  ls blog
+  782  ls
+  783  gvim mysite/settings.py
+  784  gvim blog/models.py
+  785  python manage.py makemigrations blog
+  786  python manage.py migrate blog
+  787  gvim blog/admin.py
+  788  python manage.py runserver
+  789  python manage.py createsuperuser
+  790  python manage.py runserver
+  791  gvim .gitignore
+  792  cat .gitignore
+  793  git status
+  794  ls
+  795  pwd
+  796  cd ..
+  797  ls -la
+  798  pwd
+  799  rm -rf .git
+  800  cd djangogirls
+  801  ls
+  802  git status
+  803  ls -la
+  804  git init
+  805  git status
+  806  git add .
+  807  git commit -m "My Django Girls app, first commit"
+  808  git remote add origin https://github.com/prammohan/my-first-blog.git
+  809  git push -u origin master
+  810  pwd
+  811  ls
+  812  cd blog
+  813  ls
+  814  pwd
+  815  ls
+  816  pwd
+  817  cd ..
+  818  pwd
+  819  ls
+  820  cd ..
+  821  find . -name "settings.py"
+  822  pwd
+  823  cd djangogirls
+  824  ls
+  825  gvim mysite/settings.py
+  826  grep MEDIA mysite/*
+  827  cd mysite
+  828  ls
+  829  grep MEDIA *
+  830  cd ..
+  831  grep -ir MEDIA *
+  832  pwd
+  833  grep -ir app *
+  834  which python
+  835  which pip
+  836  pip --version
+  837  pwd
+  838  gvim mysite/settings.py
+  839  ls
+  840  ls blog
+  841  gvim blog/__init__.py
+  842  ls mysite/__init__.py
+  843  cat mysite/__init__.py
+  844  ls mysite/__init__.py
+  845  gvim mysite/__pycache__/settings.cpython-39.pyc
+  846  pwd
+  847  ls
+  848  gvim db.sqlite3 
+  849  ls
+  850  history | grep server
+  851  python manage.py runserver
+  852  pwd
+  853  ls
+  854  gvim mysite/urls.py
+  855  pwd
+  856  ls
+  857  ls -al
+  858  git init
+  859  git config --global user.name "prammohan"
+  860  git config --global user.email prammohan@gmail.com
+  861  cat .gitignore
+  862  git status
+  863  ls
+  864  rm -rf .git
+  865  git status
+  866  git init
+  867  git status
+  868  cp ../requirements.txt .
+  869  cat requirements.txt
+  870  git status
+  871  git add .
+  872  git commit -m "My Django Girls app, first commit"
+  873  git remote add origin https://github.com/prammohan/my-first-blog.git
+  874  python -m django --version
+  875  python manage.py runserver
+  876  ls
+  877  python manage.py startapp polls
+  878  ls
+  879  gvim polls/views.py
+  880  ls
+  881  cd polls
+  882  touch urls.py
+  883  gvim urls.py
+  884  python manage.py runserver
+  885  cd ..
+  886  python manage.py runserver
+  887  ls
+  888  gvim mysite/urls.py
+  889  cd mysite
+  890  mv urls.py anotherurl
+  891  python manage.py runserver
+  892  cd ..
+  893  ls
+  894  python manage.py runserver
+  895  cd mysite
+  896  mv anotherurl urls.py
+  897  cd ..
+  898  python manage.py runserver
+  899  gvim polls/urls.py
+  900  python manage.py runserver
+  901  cat polls/views.py
+  902  ls
+  903  cat mysite/urls.py
+  904  gvim mysite/urls.py
+  905  ls -ltr mysite/
+  906  pwd
+  907  python manage.py runserver
+  908  cat mysite/urls.py
+  909  gvim mysite/settings.py
+  910  python manage.py migrate
+  911  gvim polls/models.py
+  912  python manage.py makemigrations polls
+  913  python manage.py sqlmigrate polls 0001
+  914  python manage.py runserver
+  915  python manage.py check
+  916  python manage.py migrate
+  917  python manage.py shell
+  918  python manage.py createsuperuser
+  919  python manage.py runserver
+  920  pwd
+  921  ls
+  922  pwd
+  923  python manage.py startapp euro21
+  924  gvim euro21/views.py
+  925  gvim euro21/urls.py
+  926  gvim mysite/urls.py
+  927  python manage.py runserver
+  928  python manage.py migrate
+  929  gvim euro21/models.py
+  930  gvim mysite/settings.py
+  931  python manage.py makemigrations euro21
+  932  python manage.py sqlmigrate euro21 0001
+  933  python manage.py migrate
+  934  python manage.py createsuperuser
+  935  python manage.py runserver
+  936  gvim euro21/admin.py
+  937  gvim polls/admin.py
+  938  python manage.py runserver
+  939  gvim euro21/admin.py
+  940  gvim polls/admin.py
+  941  python manage.py runserver
+  942  gvim euro21/models.py
+  943  python manage.py runserver
+  944  grep -i beta euro21/*
+  945  grep -i beta euro21/models.py
+  946  grep -i beta euro21/*.py
+  947  python manage.py runserver
+  948  history | grep mig 
+  949  python manage.py migrate
+  950  python manage.py makemigrations euro21
+  951  python manage.py sqlmigrate euro21 0001
+  952  python manage.py runserver\
+  953  python manage.py runserver
+  954  history | more
+  955  history | less
+  956  python manage.py runserver
+  957  python manage.py migrate
+  958  python manage.py runserver
+  959  pwd
+  960  cd euro21
+  961  ls
+  962  mkdir templates
+  963  cd templates
+  964  pwd
+  965  mkdir euro21
+  966  cd euro21
+  967  gvim index.html
+  968  python manage.py runserver
+  969  cd ..
+  970  pwd
+  971  cd ..
+  972  python manage.py runserver
+  973  pwdw
+  974  cd euro21
+  975  grep "looking" *.py
+  976  python manage.py runserver
+  977  cd ..
+  978  python manage.py runserver
+  979  grep -ir "looking" *
+  980  python manage.py runserver
+  981  pwd
+  982  cd euro21
+  983  grep -ir question *
+  984  cd ..
+  985  cd polls
+  986  grep -ir question *
+  987  cd ..
+  988  grep -ir question *
+  989  pwd
+  990  grep -ir question *
+  991  clear
+  992  grep -ir question *
+  993  grep -i question *
+  994  grep -i bet *
+  995  grep -ir bet *
+  996  python manage.py migrate
+  997  gvim polls/views.py
+  998  python manage.py runserver
+  999  pwd
+ 1000  grep polls euro21/*
+ 1001  grep -ir polls euro21/*
+ 1002  python manage.py runserver
+ 1003  python manage.py migrate
+ 1004  python manage.py runserver
+ 1005  python manage.py migrate
+ 1006  python manage.py runserver
+ 1007  pwd
+ 1008  python manage.py runserver
+ 1009  echo $VIMRUNTIME
+ 1010  echo $GVIMRUNTIME
+ 1011  find . -name ".gvimrc"
+ 1012  find ~/. -name ".gvimrc"
+ 1013  find ~/. -name ".vimrc"
+ 1014  gvim $HOME/.vimrc
+ 1015  source ~/.vimrc
+ 1016  gvim $HOME/.vimrc
+ 1017  source ~/.vimrc
+ 1018  gvim requirements.txt
+ 1019  source ~/.vimrc
+ 1020  gvim requirements.txt
+ 1021  python manage.py runserver
+ 1022  ls
+ 1023  cd euro21
+ 1024  grep django *.py
+ 1025  python manage.py runserver
+ 1026  cd ..
+ 1027  python manage.py runserver
+ 1028  grep -i choice euro21
+ 1029  grep -i choice euro21/*
+ 1030  python manage.py runserver
+ 1031  python --version
+ 1032  history | grep python
+ 1033* python3.9 -m venv myvenv
+ 1034* python manage.py runserver
+ 1035* pwd
+ 1036  gvim manage.py
+ 1037  python manage.py runserver
+ 1038  history 
+ 1039* which python
+ 1040  ls
+ 1041  cp requirements.txt requirements.txt.old
+ 1042  pip freeze > requirements.txt
+ 1043  cat requirements.txt
+ 1044  pwd
+ 1045  ls
+ 1046* python manage.py migrate
+ 1047* pwd
+ 1048* sys.prefix
+ 1049* python
+ 1050* pip -V
+ 1051* python
+ 1052* source myvenv/bin/activate
+ 1053* python manage.py migrate
+ 1054  history | grep venv

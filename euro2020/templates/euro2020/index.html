@@ -1,0 +1,154 @@
+{% if latest_bet_list %}
+    <ul>
+    {% for bet in latest_bet_list %}
+        <li><a href="/euro21/{{ bet.id }}">{{ bet.bet_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No bets are available.</p>
+{% endif %}
+
+{% if latest_group_picks_A %}
+    <ul>
+    {% for eachpick in latest_group_picks_A %}
+        {{ eachpick.name }}
+        {{ eachpick.pick }}
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No picks are available.</p>
+{% endif %}
+
+{% if latest_group_picks_A0 %}
+    <body>
+        <h1>EURO2020 GROUP PICKS AND STANDINGS</h1>
+        <!--Group A table-->
+        <table border="5" cellspacing="0" align="left" bgcolor="#ffffff">
+            <tr>
+                <td align="center" height="50" width="100">
+                    Actual
+                </td>
+                <td align="center" height="50" width="100">
+                    Evgueni
+                </td>
+                <td align="center" height="50" width="100">
+                    Ram
+                </td>
+            </tr>
+            <tr bgcolor="#fdb913">
+                <td align="center" height="25" width="100" colspan="3">
+                    Group A
+                </td>
+            </tr>
+            <tr>
+                {% for eachpick in latest_group_picks_A0 %}
+                    <td align="center" height="30" width="100" bgcolor="#000000" style="color:rgb(155, 155, 216)"> 
+                        {{ eachpick.pick }}
+                    </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for eachpick in latest_group_picks_A1 %}
+                    <td align="center" height="30" width="100" bgcolor="#000000" style="color:rgb(155, 155, 216)">
+                        {{ eachpick.pick }}
+                    </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for eachpick in latest_group_picks_A2 %}
+                    <td align="center" height="30" width="100" bgcolor="#000000" style="color:rgb(155, 155, 216)">
+                        {{ eachpick.pick }}
+                    </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for eachpick in latest_group_picks_A3 %}
+                    <td align="center" height="30" width="100" bgcolor="#000000" style="color:rgb(155, 155, 216)">
+                        {{ eachpick.pick }}
+                    </td>
+                {% endfor %}
+            </tr>
+        </table>
+        <div style = "clear:both;"></div>
+        <!--Group B table-->
+        <table border="5" cellspacing="0" align="left" bgcolor="#ffffff">
+            <tr>
+                <td align="center" height="50" width="100">
+                    Actual
+                </td>
+                <td align="center" height="50" width="100">
+                    Evgueni
+                </td>
+                <td align="center" height="50" width="100">
+                    Ram
+                </td>
+            </tr>
+            <tr bgcolor="#fdb913">
+                <td align="center" height="25" width="100" colspan="3">
+                    Group B
+                </td>
+            </tr>
+            <tr>
+                {% for eachpick in latest_group_picks_B0 %}
+                    <td align="center" height="30" width="100" bgcolor="#000000" style="color:rgb(155, 155, 216)"> 
+                        {{ eachpick.pick }}
+                    </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for eachpick in latest_group_picks_B1 %}
+                    <td align="center" height="30" width="100" bgcolor="#000000" style="color:rgb(155, 155, 216)">
+                        {{ eachpick.pick }}
+                    </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for eachpick in latest_group_picks_B2 %}
+                    <td align="center" height="30" width="100" bgcolor="#000000" style="color:rgb(155, 155, 216)">
+                        {{ eachpick.pick }}
+                    </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for eachpick in latest_group_picks_B3 %}
+                    <td align="center" height="30" width="100" bgcolor="#000000" style="color:rgb(155, 155, 216)">
+                        {{ eachpick.pick }}
+                    </td>
+                {% endfor %}
+            </tr>
+        </table>
+        <div style = "clear:both;"></div>
+        <table border="5" cellspacing="0" align="left" bgcolor="#ffffff">
+            <tr>
+                <td align="center" height="50" width="100">
+                    Actual
+                </td>
+                <td align="center" height="50" width="100">
+                    Evgueni
+                </td>
+                <td align="center" height="50" width="100">
+                    Ram
+                </td>
+            </tr>
+            <tr bgcolor="#fdb913">
+                <td align="center" height="25" width="100" colspan="3">
+                    Points 
+                </td>
+            </tr>
+            <tr>
+                <td align="center" height="30" width="100" bgcolor="#000000" style="color:rgb(155, 155, 216)"> 
+                    {{ "" }}
+                </td>
+                {% for eachplayer in group_points %}
+                    <td align="center" height="30" width="100" bgcolor="#000000" style="color:rgb(155, 155, 216)"> 
+                        {{ eachplayer }}
+                    </td>
+                {% endfor %}
+            </tr>
+            </table>
+    </body>
+{% else %}
+    <p>No picks are available.</p>
+{% endif %}
+
+

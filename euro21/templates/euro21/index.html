@@ -1,0 +1,269 @@
+{% load static %}
+<link href="{% static 'main.css' %}" rel="stylesheet" type="text/css">
+
+<body>
+    <h1>EURO21 GROUP PICKS AND STANDINGS</h1>
+    <table border="5" cellspacing="0" align="center">
+    <tr>
+        {% for groupstagepicks in latest_group_picks %}
+            <td align="center" height="50" 
+                    width="100">   
+                    <b>{{ groupstagepicks.name}}</b>
+                    <b>({{ groupstagepicks.group}})</b>
+        {% endfor %}
+    </tr>
+    
+    <tr>
+        {% for groupstagepicks in latest_group_picks %}
+        <td align="center" height="50" 
+                width="100"><br>   
+                <b>{{ groupstagepicks.p1}}</b><br>
+        {% endfor %}
+    </tr>
+    
+    
+    {% for groupstagepicks in latest_group_picks %}
+        <body>
+            {{ groupstagepicks.name}}
+            <br>
+            {{ groupstagepicks.group}}
+            <br>
+            {{ groupstagepicks.p1}}
+            {{ groupstagepicks.p2}}
+            {{ groupstagepicks.p3}}
+            {{ groupstagepicks.p4}}
+            <br>
+        </body>
+    {% endfor %}
+    </table>
+</body>
+
+<br>
+
+
+<body>
+    <h1>TIME TABLE</h1>
+    <table border="5" cellspacing="0" align="center">
+        <!--<caption>Timetable</caption>-->
+        <tr>
+            <td align="center" height="50" 
+                width="100"><br>
+                <b>Day/Period</b></br>
+            </td>
+            <td align="center" height="50" 
+                width="100">
+                <b>I<br>9:30-10:20</b>
+            </td>
+            <td align="center" height="50" 
+                width="100">
+                <b>II<br>10:20-11:10</b>
+            </td>
+            <td align="center" height="50" 
+                width="100">
+                <b>III<br>11:10-12:00</b>
+            </td>
+            <td align="center" height="50" 
+                width="100">
+                <b>12:00-12:40</b>
+            </td>
+            <td align="center" height="50" 
+                width="100">
+                <b>IV<br>12:40-1:30</b>
+            </td>
+            <td align="center" height="50" 
+                width="100">
+                <b>V<br>1:30-2:20</b>
+            </td>
+            <td align="center" height="50" 
+                width="100">
+                <b>VI<br>2:20-3:10</b>
+            </td>
+            <td align="center" height="50" 
+                width="100">
+                <b>VII<br>3:10-4:00</b>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" height="50">
+                <b>Monday</b></td>
+            <td align="center" height="50">Eng</td>
+            <td align="center" height="50">Mat</td>
+            <td align="center" height="50">Che</td>
+            <td rowspan="6" align="center" height="50">
+                <h2>L<br>U<br>N<br>C<br>H</h2>
+            </td>
+            <td colspan="3" align="center" 
+                height="50">LAB</td>
+            <td align="center" height="50">Phy</td>
+        </tr>
+        <tr>
+            <td align="center" height="50">
+                <b>Tuesday</b>
+            </td>
+            <td colspan="3" align="center" 
+                height="50">LAB
+            </td>
+            <td align="center" height="50">Eng</td>
+            <td align="center" height="50">Che</td>
+            <td align="center" height="50">Mat</td>
+            <td align="center" height="50">SPORTS</td>
+        </tr>
+        <tr>
+            <td align="center" height="50">
+                <b>Wednesday</b>
+            </td>
+            <td align="center" height="50">Mat</td>
+            <td align="center" height="50">phy</td>
+            <td align="center" height="50">Eng</td>
+            <td align="center" height="50">Che</td>
+            <td colspan="3" align="center" 
+                height="50">LIBRARY
+            </td>
+        </tr>
+        <tr>
+            <td align="center" height="50">
+                <b>Thursday</b>
+            </td>
+            <td align="center" height="50">Phy</td>
+            <td align="center" height="50">Eng</td>
+            <td align="center" height="50">Che</td>
+            <td colspan="3" align="center" 
+                height="50">LAB
+            </td>
+            <td align="center" height="50">Mat</td>
+        </tr>
+        <tr>
+            <td align="center" height="50">
+                <b>Friday</b>
+            </td>
+            <td colspan="3" align="center" 
+                height="50">LAB
+            </td>
+            <td align="center" height="50">Mat</td>
+            <td align="center" height="50">Che</td>
+            <td align="center" height="50">Eng</td>
+            <td align="center" height="50">Phy</td>
+        </tr>
+        <tr>
+            <td align="center" height="50">
+                <b>Saturday</b>
+            </td>
+            <td align="center" height="50">Eng</td>
+            <td align="center" height="50">Che</td>
+            <td align="center" height="50">Mat</td>
+            <td colspan="3" align="center" 
+                height="50">SEMINAR
+            </td>
+            <td align="center" height="50">SPORTS</td>
+        </tr>
+    </table>
+</body>
+
+{% if latest_group_list %}
+    <ul>
+    {% for group in latest_group_list %}
+        
+        <li><a href="/euro21/{{ group.id }}">{{ group.group_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% endif %}
+
+<form method="POST" action = "ACTION_OR_VIEW_URL_ON_SUBMIT_HERE">{% csrf_token %}
+    <label for="Select Group A">Choose Group-A Positions 1, 2, 3 in order</label>
+    <select type="text" id="teamSelectA1" name="teamSelectA1">
+        <option selected>GREEN</option>
+        <option>BLUE</option>
+        <option>RED</option>
+        <option>ORANGE</option>
+        <option>BLACK</option>
+    </select>
+    <select type="text" id="teamSelectA2" name="teamSelectA2">
+        <option selected>GREEN</option>
+        <option>BLUE</option>
+        <option>RED</option>
+        <option>ORANGE</option>
+        <option>BLACK</option>
+    </select>
+    <select type="text" id="teamSelectA3" name="teamSelectA3">
+        <option selected>NONE</option>
+        <option>BLUE</option>
+        <option>RED</option>
+        <option>ORANGE</option>
+        <option>BLACK</option>
+    </select>
+
+    <br><br>
+    <table style="width:25%" cellspacing="3" bgcolor="#000000">
+        <tr bgcolor="#ffffff">
+        <th>Firstname</th>
+        <th>Lastname</th> 
+        <th>Age</th>
+        </tr>
+        <tr bgcolor="#ffffff">
+        <td>Jill</td>
+        <td>Smith</td> 
+        <td>50</td>
+        </tr>
+        <tr bgcolor="#ffffff">
+        <td>Eve</td>
+        <td>Jackson</td> 
+        <td>94</td>
+        </tr>
+    </table>
+    
+    <br><br>
+
+    <label for="Select Group B">Choose Group-B Positions 1, 2, 3 in order</label>
+    <select type="text" id="teamSelectB1" name="teamSelectB1">
+        <option selected>GREEN</option>
+        <option>BLUE</option>
+        <option>RED</option>
+        <option>ORANGE</option>
+        <option>BLACK</option>
+    </select>
+    <select type="text" id="teamSelectB2" name="teamSelectB2">
+        <option selected>GREEN</option>
+        <option>BLUE</option>
+        <option>RED</option>
+        <option>ORANGE</option>
+        <option>BLACK</option>
+    </select>
+    <select type="text" id="teamSelectB3" name="teamSelectB3">
+        <option selected>NONE</option>
+        <option>BLUE</option>
+        <option>RED</option>
+        <option>ORANGE</option>
+        <option>BLACK</option>
+    </select>
+
+    <br><br>
+
+    <input type="submit" value="Submit!"/>
+</form>
+
+{% if latest_bet_list %}
+    <ul>
+    {% for bet in latest_bet_list %}
+        <li><a href="/euro21/{{ bet.id }}">{{ bet.bet_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No bets are available.</p>
+{% endif %}
+
+<p>{% autoescape off %} {{ cal }} {% endautoescape %}</p>
+
+<body>
+    {% for eachgroup in group_countries %}
+        {% for country in eachgroup %}
+            {{ country }}
+        {% endfor %}
+    {% endfor %}
+</body>
+<body>
+    {% for eachplayer in group_picks %}
+        {% for eachpick in eachgroup %}
+            {{ country }}
+        {% endfor %}
+    {% endfor %}
+</body>
