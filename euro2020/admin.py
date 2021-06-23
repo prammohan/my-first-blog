@@ -40,21 +40,21 @@ picks[4] = ["England", "Australia", "Italy", "-"]
 picks[5] = ["England", "Australia", "Italy", "-"]
 
 pick_num = 0
-for i in range(len(picks)):
-    position = 0
-    for j in range(len(picks[i])):
-        gsp = GroupStagePicks()
-        if (i < 3):
-            gsp.group = "A"
-        else:
-            gsp.group = "B"
-        gsp.name = name[i%3]
-        gsp.pick = picks[i][j]
-        gsp.position = position + 1
-        position +=1
-        if GroupStagePicks.objects.filter(name=gsp.name, group=gsp.group, position=gsp.position).exists():
-            pass
-        else:
+if GroupStagePicks.objects.filter(name="Actual", group="A").exists():
+    pass
+else:
+    for i in range(len(picks)):
+        position = 0
+        for j in range(len(picks[i])):
+            gsp = GroupStagePicks()
+            if (i < 3):
+                gsp.group = "A"
+            else:
+                gsp.group = "B"
+            gsp.name = name[i%3]
+            gsp.pick = picks[i][j]
+            gsp.position = position + 1
+            position +=1
             gsp.save()
-        print (pick_num)
-        pick_num+=1
+            print (pick_num)
+            pick_num+=1
