@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 from django.core.validators import MinValueValidator
 from django import forms
 
-
 # Create your models here.
 class Bet(models.Model):
     bet_text = models.CharField(max_length=200)

@@ -34,18 +34,16 @@ def index(request):
     
     gp_points = [0, 0]
     acc_points = [0, 0]
-
-    count = 0
-    if (count == 0):
-        start = False
-
-    if (start):
-        for i in range(num_players): #players
-            for j in range(num_groups): #groups
+    
+    #if not GroupStagePicks.objects.filter(group="A").exists():
+    for i in range(num_players): #players
+        for j in range(num_groups): #groups
+            if GroupStagePicks.objects.filter(name=AllPlayers[i], group=AllGroups[j]).exists():
                 for k in range(num_teams_per_group): #picks per group
                     #print (AllPlayers[i])
                     #print (AllGroups[j])
                     #print (k)
+                    
                     d = GroupStagePicks.objects.get(name=AllPlayers[i], group=AllGroups[j], position=k+1)
                     e = GroupStagePicks.objects.get(name="Actual", group=AllGroups[j], position=k+1)
                     #f = GroupStagePicks.objects.get(name="Actual", group=AllGroups[j])
@@ -67,16 +65,17 @@ def index(request):
                                 acc_points[i] +=1
                                 gp_points[i] +=1
 
-        #print ("points as follows")
-        #print (gp_points[0], acc_points[0])
-        #print (gp_points[1], acc_points[1])
+    #print ("points as follows")
+    #print (gp_points[0], acc_points[0])
+    #print (gp_points[1], acc_points[1])
 
-        #creating picks compatible for html viewing -- Group A
-        latest_group_picks_A0 = [""]*(num_players+1)
-        latest_group_picks_A1 = [""]*(num_players+1)
-        latest_group_picks_A2 = [""]*(num_players+1)
-        latest_group_picks_A3 = [""]*(num_players+1)
-        
+    #creating picks compatible for html viewing -- Group A
+    latest_group_picks_A0 = [""]*(num_players+1)
+    latest_group_picks_A1 = [""]*(num_players+1)
+    latest_group_picks_A2 = [""]*(num_players+1)
+    latest_group_picks_A3 = [""]*(num_players+1)
+    
+    if GroupStagePicks.objects.filter(name=AllPlayers[i], group="A").exists():
         latest_group_picks_A0[0] = GroupStagePicks.objects.get(group="A", position=1, name="Actual")
         latest_group_picks_A1[0] = GroupStagePicks.objects.get(group="A", position=2, name="Actual")
         latest_group_picks_A2[0] = GroupStagePicks.objects.get(group="A", position=3, name="Actual")
@@ -89,12 +88,13 @@ def index(request):
             latest_group_picks_A2[i+1] = GroupStagePicks.objects.get(group="A", position=3, name=AllPlayers[i])
             latest_group_picks_A3[i+1] = GroupStagePicks.objects.get(group="A", position=4, name=AllPlayers[i])
 
-        #creating picks compatible for html viewing -- Group B
-        latest_group_picks_B0 = [""]*(num_players+1)
-        latest_group_picks_B1 = [""]*(num_players+1)
-        latest_group_picks_B2 = [""]*(num_players+1)
-        latest_group_picks_B3 = [""]*(num_players+1)
-        
+    #creating picks compatible for html viewing -- Group B
+    latest_group_picks_B0 = [""]*(num_players+1)
+    latest_group_picks_B1 = [""]*(num_players+1)
+    latest_group_picks_B2 = [""]*(num_players+1)
+    latest_group_picks_B3 = [""]*(num_players+1)
+    
+    if GroupStagePicks.objects.filter(name=AllPlayers[i], group="B").exists():
         latest_group_picks_B0[0] = GroupStagePicks.objects.get(group="B", position=1, name="Actual")
         latest_group_picks_B1[0] = GroupStagePicks.objects.get(group="B", position=2, name="Actual")
         latest_group_picks_B2[0] = GroupStagePicks.objects.get(group="B", position=3, name="Actual")
@@ -107,20 +107,19 @@ def index(request):
             latest_group_picks_B2[i+1] = GroupStagePicks.objects.get(group="B", position=3, name=AllPlayers[i])
             latest_group_picks_B3[i+1] = GroupStagePicks.objects.get(group="B", position=4, name=AllPlayers[i])
 
-        #print (latest_group_picks_A0)
-        context = {
-            'latest_bet_list': latest_bet_list,
-            'latest_group_picks_A0': latest_group_picks_A0,
-            'latest_group_picks_A1': latest_group_picks_A1,
-            'latest_group_picks_A2': latest_group_picks_A2,
-            'latest_group_picks_A3': latest_group_picks_A3,
-            'latest_group_picks_B0': latest_group_picks_B0,
-            'latest_group_picks_B1': latest_group_picks_B1,
-            'latest_group_picks_B2': latest_group_picks_B2,
-            'latest_group_picks_B3': latest_group_picks_B3,
-            'group_points': gp_points,
-        }
-        return render(request, 'euro2020/index.html', context)
-    else:
-        start = True
-        return HttpResponse("Nothing to list")
+    #print (latest_group_picks_A0)
+    context = {
+        'latest_bet_list': latest_bet_list,
+        'latest_group_picks_A0': latest_group_picks_A0,
+        'latest_group_picks_A1': latest_group_picks_A1,
+        'latest_group_picks_A2': latest_group_picks_A2,
+        'latest_group_picks_A3': latest_group_picks_A3,
+        'latest_group_picks_B0': latest_group_picks_B0,
+        'latest_group_picks_B1': latest_group_picks_B1,
+        'latest_group_picks_B2': latest_group_picks_B2,
+        'latest_group_picks_B3': latest_group_picks_B3,
+        'group_points': gp_points,
+    }
+    return render(request, 'euro2020/index.html', context)
+    #else:
+    #    return HttpResponse("Nothing to list")
