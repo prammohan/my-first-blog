@@ -162,7 +162,7 @@ def index(request):
                     #print (AllGroups[j])
                     #print (k)
                     
-                    d = GroupStagePicks.objects.get(name=AllPlayers[i], group=AllGroups[j], position=k+1)
+                    d = GroupStagePicks.objects.get(name=AllPlayers[i], group=AllGroups[j], position=k+1)                    
                     e = GroupStagePicks.objects.get(name="Actual", group=AllGroups[j], position=k+1)
                     #f = GroupStagePicks.objects.get(name="Actual", group=AllGroups[j])
                 
@@ -312,6 +312,63 @@ def index(request):
             latest_group_picks_F2[i+1] = GroupStagePicks.objects.get(group="F", position=3, name=AllPlayers[i])
             latest_group_picks_F3[i+1] = GroupStagePicks.objects.get(group="F", position=4, name=AllPlayers[i])
 
+
+    #Round of 16
+    #creating picks compatible for html viewing -- Round of 16
+    num_ro16_games = 8
+    latest_ro16_picks_0 = [""]*(num_players)
+    latest_ro16_picks_1 = [""]*(num_players)
+    latest_ro16_picks_2 = [""]*(num_players)
+    latest_ro16_picks_3 = [""]*(num_players)
+    latest_ro16_picks_4 = [""]*(num_players)
+    latest_ro16_picks_5 = [""]*(num_players)
+    latest_ro16_picks_6 = [""]*(num_players)
+    latest_ro16_picks_7 = [""]*(num_players)
+
+    latest_ro16_loyalty_0 = ["Denmark"]*(num_players)
+    latest_ro16_loyalty_1 = ["Italy"]*(num_players)
+    latest_ro16_loyalty_1[0] = "Both"
+    latest_ro16_loyalty_1[1] = "Both"
+    latest_ro16_loyalty_1[2] = "Both"
+    latest_ro16_loyalty_1[5] = "Both"
+
+    latest_ro16_loyalty_2 = ["Netherlands"]*(num_players)
+    latest_ro16_loyalty_2[4] = "Both"
+    latest_ro16_loyalty_2[5] = "Both"
+
+    latest_ro16_loyalty_3 = ["Both"]*(num_players)
+
+    latest_ro16_loyalty_4 = ["Both"]*(num_players)
+
+    latest_ro16_loyalty_5 = ["France"]*(num_players)
+    latest_ro16_loyalty_5[0] = "Both"
+    latest_ro16_loyalty_5[2] = "Both"
+    latest_ro16_loyalty_5[3] = "Both"
+    latest_ro16_loyalty_5[5] = "Both"
+
+    latest_ro16_loyalty_6 = ["Both"]*(num_players)
+    latest_ro16_loyalty_6[0] = "England"
+
+    latest_ro16_loyalty_7 = ["Both"]*(num_players)
+    latest_ro16_loyalty_7[2] = "Ukraine"
+    latest_ro16_loyalty_7[5] = "Sweden"
+    
+    ro16_games_0 = "Wales vs Denmark"
+    ro16_games_1 = "Italy vs Austria"
+    ro16_games_2 = "Netherlands vs Czech Republic" 
+    ro16_games_3 = "Belgium vs Portugal" 
+    ro16_games_4 = "Croatia vs Spain"
+    ro16_games_5 = "France vs Switzerland" 
+    ro16_games_6 = "England vs Germany"
+    ro16_games_7 = "Sweden vs Ukraine"
+    
+
+
+
+    
+
+
+
     #print (latest_group_picks_A0)
     context = {
         'latest_bet_list': latest_bet_list,
@@ -343,6 +400,30 @@ def index(request):
         'acc_percentage': acc_percentage,
         'bonus_points': bonus_points,
         'total_points': total_points,
+        'latest_ro16_picks_0': latest_ro16_picks_0,
+        'latest_ro16_picks_1': latest_ro16_picks_1,
+        'latest_ro16_picks_2': latest_ro16_picks_2,
+        'latest_ro16_picks_3': latest_ro16_picks_3,
+        'latest_ro16_picks_4': latest_ro16_picks_4,
+        'latest_ro16_picks_5': latest_ro16_picks_5,
+        'latest_ro16_picks_6': latest_ro16_picks_6,
+        'latest_ro16_picks_7': latest_ro16_picks_7,
+        'latest_ro16_loyalty_0': latest_ro16_loyalty_0,
+        'latest_ro16_loyalty_1': latest_ro16_loyalty_1,
+        'latest_ro16_loyalty_2': latest_ro16_loyalty_2,
+        'latest_ro16_loyalty_3': latest_ro16_loyalty_3,
+        'latest_ro16_loyalty_4': latest_ro16_loyalty_4,
+        'latest_ro16_loyalty_5': latest_ro16_loyalty_5,
+        'latest_ro16_loyalty_6': latest_ro16_loyalty_6,
+        'latest_ro16_loyalty_7': latest_ro16_loyalty_7,
+        'ro16_games_0': ro16_games_0,
+        'ro16_games_1': ro16_games_1,
+        'ro16_games_2': ro16_games_2,
+        'ro16_games_3': ro16_games_3,
+        'ro16_games_4': ro16_games_4,
+        'ro16_games_5': ro16_games_5,
+        'ro16_games_6': ro16_games_6,
+        'ro16_games_7': ro16_games_7,
     }
     return render(request, 'euro2020/index.html', context)
     #else:
