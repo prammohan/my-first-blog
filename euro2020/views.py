@@ -316,14 +316,21 @@ def index(request):
     #Round of 16
     #creating picks compatible for html viewing -- Round of 16
     num_ro16_games = 8
-    latest_ro16_picks_0 = [""]*(num_players)
-    latest_ro16_picks_1 = [""]*(num_players)
-    latest_ro16_picks_2 = [""]*(num_players)
-    latest_ro16_picks_3 = [""]*(num_players)
-    latest_ro16_picks_4 = [""]*(num_players)
-    latest_ro16_picks_5 = [""]*(num_players)
-    latest_ro16_picks_6 = [""]*(num_players)
-    latest_ro16_picks_7 = [""]*(num_players)
+    latest_ro16_picks_0 = ["Denmark"]*(num_players)
+    latest_ro16_picks_1 = ["Italy"]*(num_players)
+    latest_ro16_picks_2 = ["Netherlands"]*(num_players)
+    latest_ro16_picks_3 = ["Belgium"]*(num_players)
+    latest_ro16_picks_3[5] = "Portugal"
+    latest_ro16_picks_4 = ["Spain"]*(num_players)
+    latest_ro16_picks_4[1] = "Croatia"
+    latest_ro16_picks_5 = ["France"]*(num_players)
+    latest_ro16_picks_6 = ["England"]*(num_players)
+    latest_ro16_picks_6[4] = "Germany"
+    latest_ro16_picks_6[5] = "Germany"
+    latest_ro16_picks_7 = ["Sweden"]*(num_players)
+    latest_ro16_picks_7[4] = "Ukraine"
+
+    print (latest_ro16_picks_0)
 
     latest_ro16_loyalty_0 = ["Denmark"]*(num_players)
     latest_ro16_loyalty_1 = ["Italy"]*(num_players)
