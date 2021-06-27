@@ -369,12 +369,24 @@ def index(request):
     ro16_games_6 = "England vs Germany"
     ro16_games_7 = "Sweden vs Ukraine"
     
-
-
-
     
 
+    overall_total_points = [0]*num_players
+    finals_total_points = [0]*num_players
+    semifinals_total_points = [0]*num_players
+    quarterfinals_total_points = [0]*num_players
+    ro16_total_points = [0]*num_players
 
+    #Ro16 point calculations
+    ro16_total_points[0] = 2 + 2 + 0 + 0 + 0 + 0 + 0 + 0
+    ro16_total_points[1] = 2 + 2 + 0 + 0 + 0 + 0 + 0 + 0
+    ro16_total_points[2] = 2 + 2 + 0 + 0 + 0 + 0 + 0 + 0
+    ro16_total_points[3] = 2 + 2 + 0 + 0 + 0 + 0 + 0 + 0
+    ro16_total_points[4] = 2 + 2 + 0 + 0 + 0 + 0 + 0 + 0
+    ro16_total_points[5] = 2 + 2 + 0 + 0 + 0 + 0 + 0 + 0
+
+    for i in range(num_players):
+        overall_total_points[i] = finals_total_points[i] + semifinals_total_points[i] + quarterfinals_total_points[i] + ro16_total_points[i] + total_points[i]
 
     #print (latest_group_picks_A0)
     context = {
@@ -431,6 +443,11 @@ def index(request):
         'ro16_games_5': ro16_games_5,
         'ro16_games_6': ro16_games_6,
         'ro16_games_7': ro16_games_7,
+        'overall_total_points': overall_total_points,
+        'finals_total_points': finals_total_points,
+        'semifinals_total_points': semifinals_total_points,
+        'quarterfinals_total_points': quarterfinals_total_points,
+        'ro16_total_points': ro16_total_points,
     }
     return render(request, 'euro2020/index.html', context)
     #else:

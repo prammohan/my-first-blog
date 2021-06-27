@@ -47,12 +47,32 @@
                     Fadi
                 </td>
             </tr>
+            <tr>
+                <td align="center" height="5" width="100" bgcolor="#000000" style="color:rgb(188, 188, 196)"> 
+                    Total points 
+                </td>
+                {% for eachpick in overall_total_points %}
+                    <td align="center" height="5" width="100" bgcolor="#000000" style="color:rgb(188, 188, 196)"> 
+                        {{ eachpick }}
+                    </td>
+                {% endfor %}
+            </tr>
             <tr bgcolor="#fdb913">
                 <td align="center" height="25" width="100" colspan="7">
                     Round of 16: 1 point for correct pick, 1 point for loyalty
                 </td>
             </tr>
             <tr><td></td></tr>
+            <tr>
+                <td align="center" height="5" width="100" bgcolor="#000000" style="color:rgb(188, 188, 196)"> 
+                    Round of 16 points 
+                </td>
+                {% for eachpick in ro16_total_points %}
+                    <td align="center" height="5" width="100" bgcolor="#000000" style="color:rgb(188, 188, 196)"> 
+                        {{ eachpick }}
+                    </td>
+                {% endfor %}
+            </tr>
             <tr>
                 <td align="center" height="5" width="100" bgcolor="#000000" style="color:rgb(188, 188, 196)"> 
                     Loyal to
