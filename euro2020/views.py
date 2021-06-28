@@ -378,11 +378,11 @@ def index(request):
     ro16_total_points = [0]*num_players
 
     #Ro16 point calculations
-    ro16_total_points[0] = 2 + 2 + 0 + 0 + 0 + 0 + 0 + 0
-    ro16_total_points[1] = 2 + 2 + 0 + 0 + 0 + 0 + 0 + 0
-    ro16_total_points[2] = 2 + 2 + 0 + 0 + 0 + 0 + 0 + 0
-    ro16_total_points[3] = 2 + 2 + 0 + 0 + 0 + 0 + 0 + 0
-    ro16_total_points[4] = 2 + 2 + 0 + 0 + 0 + 0 + 0 + 0
+    ro16_total_points[0] = 2 + 2 + 0 + 2 + 0 + 0 + 0 + 0
+    ro16_total_points[1] = 2 + 2 + 0 + 2 + 0 + 0 + 0 + 0
+    ro16_total_points[2] = 2 + 2 + 0 + 2 + 0 + 0 + 0 + 0
+    ro16_total_points[3] = 2 + 2 + 0 + 2 + 0 + 0 + 0 + 0
+    ro16_total_points[4] = 2 + 2 + 0 + 2 + 0 + 0 + 0 + 0
     ro16_total_points[5] = 2 + 2 + 0 + 0 + 0 + 0 + 0 + 0
 
     for i in range(num_players):
