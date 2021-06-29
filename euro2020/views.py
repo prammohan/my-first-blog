@@ -360,14 +360,14 @@ def index(request):
     latest_ro16_loyalty_7[2] = "Ukraine"
     latest_ro16_loyalty_7[5] = "Sweden"
     
-    ro16_games_0 = "Wales vs Denmark"
-    ro16_games_1 = "Italy vs Austria"
-    ro16_games_2 = "Netherlands vs Czech Republic" 
-    ro16_games_3 = "Belgium vs Portugal" 
-    ro16_games_4 = "Croatia vs Spain"
-    ro16_games_5 = "France vs Switzerland" 
-    ro16_games_6 = "England vs Germany"
-    ro16_games_7 = "Sweden vs Ukraine"
+    ro16_games_0 = "Wales vs Denmark = Denmark"
+    ro16_games_1 = "Italy vs Austria = Italy"
+    ro16_games_2 = "Netherlands vs Czech Republic = Czech Republic" 
+    ro16_games_3 = "Belgium vs Portugal = Belgium" 
+    ro16_games_4 = "Croatia vs Spain = Spain"
+    ro16_games_5 = "France vs Switzerland = Switzerland" 
+    ro16_games_6 = "England vs Germany = England"
+    ro16_games_7 = "Sweden vs Ukraine = ??"
     
     
 
@@ -382,9 +382,50 @@ def index(request):
     ro16_total_points[1] = 2 + 2 + 0 + 2 + 0 + 0 + 2 + 0
     ro16_total_points[2] = 2 + 2 + 0 + 2 + 2 + 0 + 2 + 0
     ro16_total_points[3] = 2 + 2 + 0 + 2 + 2 + 0 + 2 + 0
-    ro16_total_points[4] = 2 + 2 + 0 + 2 + 2 + 0 + 0 + 0
+    ro16_total_points[4] = 2 + 2 + 0 + 2 + 2 + 0 + 0 + 2
     ro16_total_points[5] = 2 + 2 + 0 + 0 + 2 + 0 + 0 + 0
 
+   
+
+    qf_games_0 = "Switzerland vs Spain"
+    qf_games_1 = "Belgium vs Italy"
+    qf_games_2 = "Czech Republic vs Denmark" 
+    qf_games_3 = "Ukraine vs England" 
+
+    # picks go next
+    latest_qf_picks_0 = [""]*(num_players)
+    latest_qf_picks_1 = [""]*(num_players)
+    latest_qf_picks_2 = [""]*(num_players)
+    latest_qf_picks_3 = [""]*(num_players)
+
+    #initialize
+    latest_qf_loyalty_0 = ["0,0"]*(num_players)
+    latest_qf_loyalty_1 = ["0,0"]*(num_players)
+    latest_qf_loyalty_2 = ["0,0"]*(num_players)
+    latest_qf_loyalty_3 = ["0,0"]*(num_players)
+
+    #assign for qf loyalty
+    latest_qf_loyalty_0 = ["0   |   2"]*(num_players)
+    latest_qf_loyalty_0[1] = "0   |   0"
+    latest_qf_loyalty_1 = ["2   |   2"]*(num_players)
+    latest_qf_loyalty_2 = ["0   |   2"]*(num_players)
+    latest_qf_loyalty_3[0] = "0   |   2"
+    latest_qf_loyalty_3[1] = "0   |   2"
+    latest_qf_loyalty_3[2] = "0   |   2"
+    latest_qf_loyalty_3[3] = "0   |   2"
+    latest_qf_loyalty_3[4] = "2   |   0" #change to 2,0 if Ukraine wins - otehrs to 0 if ukraine wins
+    latest_qf_loyalty_3[5] = "0   |   0"
+
+     #Quarter finals point calculations
+    quarterfinals_total_points[0] = 0 + 0 + 0 + 0
+    quarterfinals_total_points[1] = 0 + 0 + 0 + 0
+    quarterfinals_total_points[2] = 0 + 0 + 0 + 0
+    quarterfinals_total_points[3] = 0 + 0 + 0 + 0
+    quarterfinals_total_points[4] = 0 + 0 + 0 + 0
+    quarterfinals_total_points[5] = 0 + 0 + 0 + 0
+
+
+    
     for i in range(num_players):
         overall_total_points[i] = finals_total_points[i] + semifinals_total_points[i] + quarterfinals_total_points[i] + ro16_total_points[i] + total_points[i]
 
@@ -427,6 +468,10 @@ def index(request):
         'latest_ro16_picks_5': latest_ro16_picks_5,
         'latest_ro16_picks_6': latest_ro16_picks_6,
         'latest_ro16_picks_7': latest_ro16_picks_7,
+        'latest_qf_picks_0': latest_qf_picks_0,
+        'latest_qf_picks_1': latest_qf_picks_1,
+        'latest_qf_picks_2': latest_qf_picks_2,
+        'latest_qf_picks_3': latest_qf_picks_3,
         'latest_ro16_loyalty_0': latest_ro16_loyalty_0,
         'latest_ro16_loyalty_1': latest_ro16_loyalty_1,
         'latest_ro16_loyalty_2': latest_ro16_loyalty_2,
@@ -435,6 +480,10 @@ def index(request):
         'latest_ro16_loyalty_5': latest_ro16_loyalty_5,
         'latest_ro16_loyalty_6': latest_ro16_loyalty_6,
         'latest_ro16_loyalty_7': latest_ro16_loyalty_7,
+        'latest_qf_loyalty_0': latest_qf_loyalty_0,
+        'latest_qf_loyalty_1': latest_qf_loyalty_1,
+        'latest_qf_loyalty_2': latest_qf_loyalty_2,
+        'latest_qf_loyalty_3': latest_qf_loyalty_3,
         'ro16_games_0': ro16_games_0,
         'ro16_games_1': ro16_games_1,
         'ro16_games_2': ro16_games_2,
@@ -443,6 +492,10 @@ def index(request):
         'ro16_games_5': ro16_games_5,
         'ro16_games_6': ro16_games_6,
         'ro16_games_7': ro16_games_7,
+        'qf_games_0': qf_games_0,
+        'qf_games_1': qf_games_1,
+        'qf_games_2': qf_games_2,
+        'qf_games_3': qf_games_3,
         'overall_total_points': overall_total_points,
         'finals_total_points': finals_total_points,
         'semifinals_total_points': semifinals_total_points,
