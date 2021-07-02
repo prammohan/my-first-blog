@@ -393,10 +393,18 @@ def index(request):
     qf_games_3 = "Ukraine vs England" 
 
     # picks go next
-    latest_qf_picks_0 = [""]*(num_players)
-    latest_qf_picks_1 = [""]*(num_players)
-    latest_qf_picks_2 = [""]*(num_players)
-    latest_qf_picks_3 = [""]*(num_players)
+    latest_qf_picks_0 = ["Spain"]*(num_players)
+    latest_qf_picks_0[5] = "Switzerland"
+    latest_qf_picks_1 = ["Italy"]*(num_players)
+    latest_qf_picks_1[3] = "Belgium"
+    latest_qf_picks_1[4] = "Belgium"
+    latest_qf_picks_1[5] = "Belgium"
+
+    latest_qf_picks_2 = ["Denmark"]*(num_players)
+    latest_qf_picks_2[4] = "Czech Republic"
+    latest_qf_picks_2[5] = "Czech Republic"
+
+    latest_qf_picks_3 = ["England"]*(num_players)
 
     #initialize
     latest_qf_loyalty_0 = ["0,0"]*(num_players)
