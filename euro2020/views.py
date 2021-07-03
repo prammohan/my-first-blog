@@ -405,6 +405,7 @@ def index(request):
     latest_qf_picks_2[5] = "Czech Republic"
 
     latest_qf_picks_3 = ["England"]*(num_players)
+    latest_qf_picks_3[5] = "Ukraine"
 
     #initialize
     latest_qf_loyalty_0 = ["0,0"]*(num_players)
@@ -425,11 +426,11 @@ def index(request):
     latest_qf_loyalty_3[5] = "0   |   0"
 
      #Quarter finals point calculations
-    quarterfinals_total_points[0] = 0 + 0 + 0 + 0
-    quarterfinals_total_points[1] = 0 + 0 + 0 + 0
-    quarterfinals_total_points[2] = 0 + 0 + 0 + 0
-    quarterfinals_total_points[3] = 0 + 0 + 0 + 0
-    quarterfinals_total_points[4] = 0 + 0 + 0 + 0
+    quarterfinals_total_points[0] = 3 + 3 + 3 + 0
+    quarterfinals_total_points[1] = 1 + 3 + 3 + 0
+    quarterfinals_total_points[2] = 3 + 3 + 3 + 0
+    quarterfinals_total_points[3] = 3 + 0 + 3 + 0
+    quarterfinals_total_points[4] = 3 + 0 + 0 + 0
     quarterfinals_total_points[5] = 0 + 0 + 0 + 0
 
 
