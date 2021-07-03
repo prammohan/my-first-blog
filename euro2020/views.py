@@ -434,6 +434,36 @@ def index(request):
     quarterfinals_total_points[5] = 0 + 0 + 0 + 0
 
 
+    #SEMIFINALS
+    sf_games_0 = "Spain vs Italy"
+    sf_games_1 = "Denmark vs England" 
+
+    # picks go next
+    latest_sf_picks_0 = [""]*(num_players)
+    latest_sf_picks_1 = [""]*(num_players)
+    
+    #initialize
+    latest_sf_loyalty_0 = ["0,0"]*(num_players)
+    latest_sf_loyalty_1 = ["0,0"]*(num_players)
+
+    #assign for sf loyalty
+    latest_sf_loyalty_0 = ["3   |   3"]*(num_players)
+    latest_sf_loyalty_0[1] = "0   |   3"
+    latest_sf_loyalty_0[3] = "3   |   0"
+    latest_sf_loyalty_0[4] = "3   |   0"
+    latest_sf_loyalty_0[5] = "3   |   0"
+    latest_sf_loyalty_1 = ["3   |   3"]*(num_players)
+    latest_sf_loyalty_1[4] = "0   |   3"
+    latest_sf_loyalty_1[5] = "0   |   0"
+
+     #Semi finals point calculations
+    semifinals_total_points[0] = 0 + 0
+    semifinals_total_points[1] = 0 + 0
+    semifinals_total_points[2] = 0 + 0
+    semifinals_total_points[3] = 0 + 0
+    semifinals_total_points[4] = 0 + 0
+    semifinals_total_points[5] = 0 + 0
+
     
     for i in range(num_players):
         overall_total_points[i] = finals_total_points[i] + semifinals_total_points[i] + quarterfinals_total_points[i] + ro16_total_points[i] + total_points[i]
@@ -481,6 +511,8 @@ def index(request):
         'latest_qf_picks_1': latest_qf_picks_1,
         'latest_qf_picks_2': latest_qf_picks_2,
         'latest_qf_picks_3': latest_qf_picks_3,
+        'latest_sf_picks_0': latest_sf_picks_0,
+        'latest_sf_picks_1': latest_sf_picks_1,
         'latest_ro16_loyalty_0': latest_ro16_loyalty_0,
         'latest_ro16_loyalty_1': latest_ro16_loyalty_1,
         'latest_ro16_loyalty_2': latest_ro16_loyalty_2,
@@ -493,6 +525,8 @@ def index(request):
         'latest_qf_loyalty_1': latest_qf_loyalty_1,
         'latest_qf_loyalty_2': latest_qf_loyalty_2,
         'latest_qf_loyalty_3': latest_qf_loyalty_3,
+        'latest_sf_loyalty_0': latest_sf_loyalty_0,
+        'latest_sf_loyalty_1': latest_sf_loyalty_1,
         'ro16_games_0': ro16_games_0,
         'ro16_games_1': ro16_games_1,
         'ro16_games_2': ro16_games_2,
@@ -505,6 +539,8 @@ def index(request):
         'qf_games_1': qf_games_1,
         'qf_games_2': qf_games_2,
         'qf_games_3': qf_games_3,
+        'sf_games_0': sf_games_0,
+        'sf_games_1': sf_games_1,
         'overall_total_points': overall_total_points,
         'finals_total_points': finals_total_points,
         'semifinals_total_points': semifinals_total_points,

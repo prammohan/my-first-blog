@@ -59,6 +59,74 @@
                     </td>
                 {% endfor %}
             </tr>
+            
+            <here>
+            <tr bgcolor="#fdb913">
+                <td align="center" height="25" width="100" colspan="7">
+                    Semi Finals: 1 point for correct pick, up to 3 points for loyalty
+                </td>
+            </tr>
+            <tr>
+                <td align="center" height="5" width="100" bgcolor="#000000" style="color:rgb(188, 188, 196)"> 
+                    Semi final points 
+                </td>
+                {% for eachpick in semifinals_total_points %}
+                    <td align="center" height="5" width="100" bgcolor="#000000" style="color:rgb(188, 188, 196)"> 
+                        {{ eachpick }}
+                    </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td align="center" height="5" width="100" bgcolor="#000000" style="color:rgb(188, 188, 196)"> 
+                    <font size="-3">
+                        Loyalty points Spain | Italy
+                    </font>
+                </td>
+                {% for eachpick in latest_sf_loyalty_0 %}
+                    <td align="center" height="5" width="100" bgcolor="#000000" style="color:rgb(188, 188, 196)"> 
+                        <font size="-3">    
+                            {{ eachpick }}
+                        </font>
+                    </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td align="center" height="30" width="100" bgcolor="#000000" style="color:rgb(155, 155, 216)"> 
+                    {{ sf_games_0 }}
+                </td>
+                {% for eachpick in latest_sf_picks_0 %}
+                    <td align="center" height="30" width="100" bgcolor="#000000" style="color:rgb(155, 155, 216)"> 
+                        {{ eachpick }}
+                    </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td align="center" height="5" width="100" bgcolor="#000000" style="color:rgb(188, 188, 196)"> 
+                    <font size="-3">
+                        Loyalty points Denmark | England
+                    </font>
+                </td>
+                {% for eachpick in latest_sf_loyalty_1 %}
+                    <td align="center" height="5" width="100" bgcolor="#000000" style="color:rgb(188, 188, 196)"> 
+                        <font size="-3">    
+                            {{ eachpick }}
+                        </font>
+                    </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td align="center" height="30" width="100" bgcolor="#000000" style="color:rgb(155, 155, 216)"> 
+                    {{ sf_games_1 }}
+                </td>
+                {% for eachpick in latest_sf_picks_1 %}
+                    <td align="center" height="30" width="100" bgcolor="#000000" style="color:rgb(155, 155, 216)"> 
+                        {{ eachpick }}
+                    </td>
+                {% endfor %}
+            </tr>
+
+
+
             <tr bgcolor="#fdb913">
                 <td align="center" height="25" width="100" colspan="7">
                     Quarter Finals: 1 point for correct pick, up to 2 points for loyalty
