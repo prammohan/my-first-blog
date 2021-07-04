@@ -426,11 +426,11 @@ def index(request):
     latest_qf_loyalty_3[5] = "0   |   0"
 
      #Quarter finals point calculations
-    quarterfinals_total_points[0] = 3 + 3 + 3 + 0
-    quarterfinals_total_points[1] = 1 + 3 + 3 + 0
-    quarterfinals_total_points[2] = 3 + 3 + 3 + 0
-    quarterfinals_total_points[3] = 3 + 0 + 3 + 0
-    quarterfinals_total_points[4] = 3 + 0 + 0 + 0
+    quarterfinals_total_points[0] = 3 + 3 + 3 + 3
+    quarterfinals_total_points[1] = 1 + 3 + 3 + 3
+    quarterfinals_total_points[2] = 3 + 3 + 3 + 3
+    quarterfinals_total_points[3] = 3 + 0 + 3 + 3
+    quarterfinals_total_points[4] = 3 + 0 + 0 + 1
     quarterfinals_total_points[5] = 0 + 0 + 0 + 0
 
 
