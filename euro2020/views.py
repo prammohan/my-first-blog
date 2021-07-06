@@ -439,8 +439,12 @@ def index(request):
     sf_games_1 = "Denmark vs England" 
 
     # picks go next
-    latest_sf_picks_0 = [""]*(num_players)
-    latest_sf_picks_1 = [""]*(num_players)
+    latest_sf_picks_0 = ["Italy"]*(num_players)
+    latest_sf_picks_0[4] = "Spain"
+    latest_sf_picks_0[5] = "Spain"
+    latest_sf_picks_1 = ["England"]*(num_players)
+    latest_sf_picks_1[4] = "Denmark"
+    latest_sf_picks_1[5] = "Denmark"
     
     #initialize
     latest_sf_loyalty_0 = ["0,0"]*(num_players)
