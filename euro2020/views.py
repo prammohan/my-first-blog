@@ -461,10 +461,10 @@ def index(request):
     latest_sf_loyalty_1[5] = "0   |   0"
 
      #Semi finals point calculations
-    semifinals_total_points[0] = 0 + 0
-    semifinals_total_points[1] = 0 + 0
-    semifinals_total_points[2] = 0 + 0
-    semifinals_total_points[3] = 0 + 0
+    semifinals_total_points[0] = 4 + 0
+    semifinals_total_points[1] = 4 + 0
+    semifinals_total_points[2] = 4 + 0
+    semifinals_total_points[3] = 1 + 0
     semifinals_total_points[4] = 0 + 0
     semifinals_total_points[5] = 0 + 0
 
