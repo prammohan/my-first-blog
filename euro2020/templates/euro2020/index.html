@@ -60,6 +60,46 @@
                 {% endfor %}
             </tr>
             
+            <tr bgcolor="#fdb913">
+                <td align="center" height="25" width="100" colspan="7">
+                    Finals: 1 point for correct pick, up to 4 points for loyalty
+                </td>
+            </tr>
+            <tr>
+                <td align="center" height="5" width="100" bgcolor="#000000" style="color:rgb(188, 188, 196)"> 
+                    Final points 
+                </td>
+                {% for eachpick in finals_total_points %}
+                    <td align="center" height="5" width="100" bgcolor="#000000" style="color:rgb(188, 188, 196)"> 
+                        {{ eachpick }}
+                    </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td align="center" height="5" width="100" bgcolor="#000000" style="color:rgb(188, 188, 196)"> 
+                    <font size="-3">
+                        Loyalty points Italy | England
+                    </font>
+                </td>
+                {% for eachpick in latest_f_loyalty_0 %}
+                    <td align="center" height="5" width="100" bgcolor="#000000" style="color:rgb(188, 188, 196)"> 
+                        <font size="-3">    
+                            {{ eachpick }}
+                        </font>
+                    </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td align="center" height="30" width="100" bgcolor="#000000" style="color:rgb(155, 155, 216)"> 
+                    {{ f_games_0 }}
+                </td>
+                {% for eachpick in latest_f_picks_0 %}
+                    <td align="center" height="30" width="100" bgcolor="#000000" style="color:rgb(155, 155, 216)"> 
+                        {{ eachpick }}
+                    </td>
+                {% endfor %}
+            </tr>
+
             <here>
             <tr bgcolor="#fdb913">
                 <td align="center" height="25" width="100" colspan="7">
